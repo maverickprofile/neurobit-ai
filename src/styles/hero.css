@@ -1,0 +1,114 @@
+/* Hero Section Styles */
+/* Hero Section Styles */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow: hidden;
+}
+
+/* Responsive Heading */
+.hero h1 {
+  font-size: 2.5rem;  /* Default for small screens */
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* Larger Font on Bigger Screens */
+@media (min-width: 640px) {  /* sm */
+  .hero h1 {
+      font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {  /* md */
+  .hero h1 {
+      font-size: 3rem;
+  }
+}
+
+/* Text Paragraph */
+.hero p {
+  color: #282727 !important;
+  font-size: 1rem;
+  margin-top: 12px;
+}
+
+/* Buttons */
+.hero .buttons {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Buttons for larger screens */
+@media (min-width: 640px) { 
+  .hero .buttons {
+      flex-direction: row;
+      justify-content: center;
+      max-width: none;
+  }
+}
+
+/* Button Styles */
+.hero .buttons button {
+  font-size: 1rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero .buttons .primary {
+  background: black;
+  color: white;
+  border: none;
+}
+
+.hero .buttons .secondary {
+  border: 1px solid black;
+  background: transparent;
+  color: black;
+}
+
+.hero .buttons button:hover {
+  opacity: 0.8;
+}
+
+/* Wave Background */
+.wave-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+/* Gradient Fade Effect */
+.fade-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 75%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+}
+
+span .bg-gradient-radial {
+  background: radial-gradient(circle, #2A1534 0%, #092847 100%) !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
