@@ -5,7 +5,7 @@ const features = [
     id: 1,
     title: "Advanced Human-Like Voice Assistants",
     description:
-      "Our AI Voice Assistants exemplify human-like precision and can be rapidly tailored using your specific data. Leveraging sophisticated technology, they adeptly handle a multitude of business operations. Whether initiating outbound calls, managing incoming inquiries, or orchestrating appointment schedules, our assistants function tirelessly 24/7 to ensure your business communications are seamless and effective.",
+      "Neurobit AI Voice Assistants are designed with human-like precision and adaptability, trained on your unique data for seamless integration. Powered by advanced AI, they manage a wide range of business tasks — from handling inbound queries and making outbound calls to scheduling appointments — all with 24/7 reliability. Elevate your communication workflow with AI that never sleeps.",
     image: "./dd9ddab14a6c86e9469c620fdd00cbae.jpg",
     reverse: false,
   },
@@ -13,7 +13,7 @@ const features = [
     id: 2,
     title: "Versatile Voice Options",
     description:
-      "Choose from an extensive array of human-like voices to find the perfect match for your brand’s identity, or create an even more personalized touch by cloning your own voice. Our diverse voice options are designed to cater to the unique needs of your clientele, enhancing user engagement and satisfaction with every interaction.",
+      "Neurobit AI offers a rich selection of human-like voices, allowing you to find the perfect tone that reflects your brand’s identity. For a truly personalized experience, you can even clone your own voice. Our diverse voice options are crafted to resonate with your audience, boosting engagement and delivering more meaningful interactions every time.",
     image: "./bac24cb1ec63c0c17c1f5b7a2627ec01.jpg",
     reverse: true,
   },
@@ -21,10 +21,18 @@ const features = [
     id: 3,
     title: "Seamless Integration for Optimized Workflow",
     description:
-      "At Aitoflo, we understand the importance of seamless integration in maintaining smooth operational flows. Our AI solutions are designed to integrate effortlessly with your existing systems and CRMs, ensuring that transitions are fluid and that your business processes flow without interruption. This integration enables a harmonious workflow, allowing your AI Voice Assistants to synchronize with your operations and deliver enhanced productivity and efficiency.",
+      "At Neurobit AI, we prioritize seamless integration to keep your operations running smoothly. Our AI solutions are built to effortlessly connect with your existing systems and CRMs, ensuring a streamlined transition without disrupting workflows. This deep integration empowers our AI Voice Assistants to work in sync with your processes, boosting overall efficiency and productivity.",
     image: "/7b641aff5ca4637d7e678bc621ddde61.jpg",
     reverse: false,
   },
+  {
+    id: 4,
+    title: "AI Chatbot Integration – Smart Support",
+    description:
+      "Enhance your website with our intelligent AI Chatbot integration. Built to engage visitors, handle inquiries, and automate conversations 24/7, this chatbot connects seamlessly with your backend workflows—including n8n, CRMs, and databases. Deliver instant support and elevate user experience without the overhead of live agents.",
+    image: "https://i.pinimg.com/736x/47/4c/f3/474cf3b31e3f2f08863030d1dfa9f4ff.jpg", // replace with your actual image path
+    reverse: true,
+  },  
 ];
 
 const MoreFeatures = () => {

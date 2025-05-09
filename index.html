@@ -2,16 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/neurobit_ai_logo-removebg-preview (1).png" />
     <link rel="stylesheet" href="./src/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neurobit AI</title>
+    {/* CSS from CDN */}
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <style>
+      /* More specific styles for the textarea */
+      :root {
+        --chat--textarea--background: #ffffff !important;
+        --chat--textarea--color: #000000 !important;
+      }
+      .n8n-chat-window textarea { /* Target the textarea element directly within the chat window */
+        background-color: #ffffff !important;
+        color: #000000 !important;
+      }
+      .n8n-chat-window .n8n-chat-input textarea { /* Even more specific */
+        background-color: #040404 !important;
+        color: #ffffff !important;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
+
+    {/* Chatbot Initialization via CDN */}
+    <script type="module">
+      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+      createChat({
+        webhookUrl: 'https://n8n.srv799191.hstgr.cloud/webhook/2040757b-84c4-49ce-a975-22e2b30d19bf/chat',
+        initialMessages: [
+          'Hi there! 👋',
+          'I\'m Ava. How can I assist you today?'
+        ]
+      });
+    </script>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

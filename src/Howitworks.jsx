@@ -20,12 +20,6 @@ const HowItWorks = () => {
       description: "Instant access to analyzed post-call insights.",
       image: "/614ffae8e5d3d0c9894cbc05be2831e8.jpg",
     },
-    {
-      id: 4,
-      title: "Download & Share",
-      description: "Download high-quality insights or share seamlessly.",
-      image: "/4a903338c0e478248153bd8f3f6f6745.jpg",
-    },
   ];
 
   return (
@@ -46,7 +40,7 @@ const HowItWorks = () => {
       </div>
 
       {/* Steps Container */}
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
         {steps.map((step) => (
           <div
             key={step.id}

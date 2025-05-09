@@ -11,12 +11,15 @@ const CallToAction = () => {
         Join over users leveraging AI-powered voice assistance for seamless conversations.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-md flex items-center gap-2">
+          {/* <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-md flex items-center gap-2">
             Get Started <span className="ml-1">&#8594;</span>
-          </button>
+          </button> */}
+          <a href="#register">
           <button className="bg-white border border-gray-300 hover:border-gray-400 text-gray-900 font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-sm">
             Talk to an Expert
           </button>
+          </a>
+          
         </div>
       </div>
     </div>

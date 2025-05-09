@@ -8,12 +8,12 @@ const Navbar = () => {
     <>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-10 px-6 md:px-20">
+      <footer className="bg-gray-900 text-gray-400 py-10 px-6 md:px-20" id="footer">
         <div className="max-w-7xl mx-auto">
           {/* Top Section */}
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <div>
-              <h2 className="text-white text-2xl font-bold">Neurobit AI</h2>
+              <h2 className="text-white text-2xl font-bold"> <img src="" alt="" />Neurobit AI</h2>
               <p className="mt-2">Subscribe to our newsletter for product updates</p>
             </div>
             <div className="mt-4 md:mt-0">

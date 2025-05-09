@@ -30,13 +30,14 @@ const featuresList = [
 
 const Features = () => {
   return (
-    <section className="flex flex-col items-center text-center px-4 py-10 md:px-6 lg:px-8 bg-white">
+    <section className="flex flex-col items-center text-center px-4 py-10 md:px-6 lg:px-8 bg-white" id="features">
       {/* Heading */}
       <h2 className="text-3xl md:text-4xl font-bold text-black">
-        <span className="bg-gray-200 px-3 py-1 rounded-md text-black">
-        Seamlessly automate customer interactions
-        </span>
-      </h2>
+  <span className="bg-gray-200 px-3 py-1 rounded-md text-black inline-block">
+    Seamlessly automate <br className="block md:hidden" /> customer interactions
+  </span>
+</h2>
+
       <h3 className="text-2xl md:text-3xl font-semibold mt-4 text-black">
       with AI-driven plug-and-play agents.
       </h3>

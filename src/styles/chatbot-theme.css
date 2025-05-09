@@ -1,0 +1,25 @@
+
+/* Custom Input Field Styling */
+.n8n-chat input {
+  background-color: #000000 !important; /* black input background */
+  color: #ffffff !important;            /* white text */
+  border: 1px solid #333 !important;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* Custom Send Button Styling */
+.n8n-chat button {
+  background-color: #686DF7 !important;  /* your primary purple */
+  color: #ffffff !important;             /* white icon */
+  border: none;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-left: 8px;
+  transition: background-color 0.3s ease;
+}
+
+/* Send Button Hover Effect */
+.n8n-chat button:hover {
+  background-color: #4D7EF5 !important;  /* lighter purple on hover */
+}

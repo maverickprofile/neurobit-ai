@@ -26,24 +26,22 @@ const Hero = () => {
       <div className="relative z-10 max-w-4xl px-6">
         <h1 className="text-4xl sm:text-5xl md:text-6xl text-white font-bold leading-snug sm:leading-tight text-center">
           Revolutionize Your{" "}
-          <span className="text-transparent bg-clip-text bg-[radial-gradient(circle,_#FCE167_0%,_#B22223_100%)]">
-            Call Operations
+          <span className="text-transparent bg-clip-text bg-[radial-gradient(circle,_#2fabe0_0%,_#f187f5_100%)]">
+            Operations
           </span>{" "}
-          with AI Voice Solutions
+          with AI Voice and Chat Solutions
         </h1>
 
-        <p className="text-gray-300 text-base sm:text-lg mt-4">
+        <p className="text-base sm:text-lg mt-4">
           Discover the new way to build, test, deploy, and monitor production-ready AI voice agents at scale.
         </p>
 
         {/* Buttons */}
         <div className="mt-6 flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center items-center">
-          <button className="w-full sm:w-auto bg-black text-white px-6 py-3 rounded-md font-medium transition duration-300 hover:bg-gray-800">
+        <a href="#register"><button className="w-full sm:w-auto bg-black text-white px-6 py-3 rounded-md font-medium transition duration-300 hover:bg-gray-800">
             TRY FOR FREE
-          </button>
-          <button className="w-full sm:w-auto border border-white text-white px-6 py-3 rounded-md font-medium transition duration-300 hover:bg-white hover:text-black">
-            CONTACT US
-          </button>
+          </button></a>
+          
         </div>
       </div>
     </section>

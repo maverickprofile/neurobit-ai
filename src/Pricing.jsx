@@ -1,29 +1,24 @@
-import React, { useState } from "react";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa"; // React Icons
+import React from "react";
+import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 const plans = [
   {
-    name: "Free Trial",
-    price: "Free for 3 Days",
-    description: "Experience premium features for 3 days.",
-    features: ["2 Simultaneous Calls"],
-    missingFeatures: [
-      "Full Integration",
-      "24/7 Support",
-      "Regular Maintenance",
+    name: "AI Chatbot Integration",
+    price: "$999",
+    description:
+      "Smart AI Chatbot built into your website with seamless backend integration.",
+    features: [
+      "Real-time Website Chat Integration",
+      "n8n & CRM Workflow Support",
+      "24/7 Automated Response Handling",
+      "Custom Conversation Flows",
+      "One-Time Setup & Configuration",
     ],
-  },
-  {
-    name: "Starter Pack",
-    price: "$199/month",
-    description: "Perfect for growing teams.",
-    features: ["20 Simultaneous Calls", "Full Integration"],
-    missingFeatures: ["24/7 Support", "Regular Maintenance"],
-    popular: true, // Highlight this plan
+    missingFeatures: [],
   },
   {
     name: "Enterprise Pack",
-    price: "$499/month",
+    price: "Custom",
     description: "For businesses needing full support.",
     features: [
       "Up to 50 Simultaneous Calls",
@@ -36,68 +31,56 @@ const plans = [
 ];
 
 const Pricing = () => {
-  const [isYearly, setIsYearly] = useState(false);
-
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+    <section className="py-20 bg-black text-white" id="pricing">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        {/* Title */}
-        <h2 className="text-5xl font-extrabold mb-6">
-          Choose the <span className="text-orange-500">Right Plan</span> for You
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
+          Choose the{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#686DF7] via-[#14A1F0] to-[#4D7EF5]">
+            Right Plan
+          </span>{" "}
+          for You
         </h2>
-        <p className="text-gray-400 text-lg mb-12">
+        <p className="text-gray-400 text-lg mb-12 max-w-2xl mx-auto">
           Flexible plans that grow with your business. Upgrade anytime.
         </p>
 
-        {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`p-8 rounded-xl shadow-lg border ${
-                plan.popular
-                  ? "border-orange-500 bg-gray-900"
-                  : "border-gray-700 bg-gray-800"
-              } transition transform hover:scale-105`}
+              className="flex flex-col justify-between h-full p-8 rounded-2xl bg-[#121214] border border-[#2D2D2D] shadow-sm hover:shadow-lg hover:scale-[1.02] transition-all duration-300 ease-in-out"
             >
-              {/* Popular Tag */}
-              {plan.popular && (
-                <span className="bg-orange-500 text-xs uppercase px-3 py-1 rounded-full text-white tracking-wider absolute -mt-4">
-                  Most Popular
-                </span>
-              )}
+              <div>
+                <h3 className="text-2xl font-semibold mb-2">{plan.name}</h3>
+                <p className="text-sm text-gray-400 mb-4">{plan.description}</p>
+                <p className="text-4xl font-bold mb-6">{plan.price}</p>
 
-              {/* Plan Name & Description */}
-              <h3 className="text-2xl font-bold mt-4">{plan.name}</h3>
-              <p className="text-gray-400 mb-4">{plan.description}</p>
-
-              {/* Pricing */}
-              <p className="text-3xl font-extrabold text-orange-500">
-                {plan.price}
-                <span className="text-sm text-gray-400"></span>
-              </p>
-
-              {/* Features List */}
-              <ul className="mt-6 space-y-3 text-left">
-                {plan.features.map((feature, i) => (
-                  <li key={i} className="flex items-center text-green-400">
-                    <FaCheckCircle className="mr-2" /> {feature}
-                  </li>
-                ))}
-
-                {/* Missing Features (Unavailable Features) */}
-                {plan.missingFeatures.length > 0 &&
-                  plan.missingFeatures.map((feature, i) => (
-                    <li key={i} className="flex items-center text-gray-500 line-through">
-                      <FaTimesCircle className="mr-2" /> {feature}
+                <ul className="space-y-3 text-left">
+                  {plan.features.map((feature, i) => (
+                    <li key={i} className="flex items-start text-sm text-gray-300">
+                      <FaCheckCircle className="mt-0.5 mr-2 text-green-400" />
+                      {feature}
                     </li>
                   ))}
-              </ul>
+                  {plan.missingFeatures.length > 0 &&
+                    plan.missingFeatures.map((feature, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start text-sm text-gray-600 line-through"
+                      >
+                        <FaTimesCircle className="mt-0.5 mr-2 text-gray-600" />
+                        {feature}
+                      </li>
+                    ))}
+                </ul>
+              </div>
 
-              {/* Get Started Button */}
-              <button className="mt-8 px-6 py-3 w-full font-semibold text-white bg-orange-500 rounded-lg hover:bg-orange-600 transition">
-                Get Started
-              </button>
+              <a href="#register" className="mt-8">
+                <button className="w-full py-3 font-medium bg-[#1F1F1F] text-white rounded-lg border border-gray-700 hover:bg-[#2A2A2A] transition duration-300">
+                  Get Started
+                </button>
+              </a>
             </div>
           ))}
         </div>
